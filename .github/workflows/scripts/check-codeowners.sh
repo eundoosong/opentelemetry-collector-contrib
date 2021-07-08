@@ -21,9 +21,9 @@ check_component_existence() {
   while IFS= read -r line
   do
     if [[ $line =~ ^[^#\*] ]]; then
-      PATH=$(echo "$line" | cut -d" " -f1)
-      if [ ! -d "$PATH" ]; then
-        echo "\"$PATH\" not existed as specified in CODEOWNERS"
+      COMPONENT_PATH=$(echo "$line" | cut -d" " -f1)
+      if [ ! -d "$COMPONENT_PATH" ]; then
+        echo "\"$COMPONENT_PATH\" not existed as specified in CODEOWNERS"
         ((NOT_EXIST_COMPONENTS=NOT_EXIST_COMPONENTS+1))
       fi
     fi
