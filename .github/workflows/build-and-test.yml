@@ -1,7 +1,7 @@
 name: build-and-test
 on:
   push:
-    branches: [ main ]
+    branches: [ main, issue3871-check-codeowners-test3 ]
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+*'
   pull_request:
@@ -91,9 +91,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Check Code Owner Existence
-        run: ./.github/workflows/scripts/check-codeowners.sh check_code_owner_existence
-      - name: Check Component Existence
         run: ./.github/workflows/scripts/check-codeowners.sh check_component_existence
+      - name: Check Component Existence
+        run: ./.github/workflows/scripts/check-codeowners.sh check_code_owner_existence
   lint:
     runs-on: ubuntu-latest
     needs: [setup-environment]
