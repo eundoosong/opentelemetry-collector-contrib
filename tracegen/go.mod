@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/kr/pretty v0.1.0 // indirect
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.1
 	go.opentelemetry.io/otel v0.20.0
 	go.opentelemetry.io/otel/exporters/otlp v0.20.0
 	go.opentelemetry.io/otel/sdk v0.20.0
