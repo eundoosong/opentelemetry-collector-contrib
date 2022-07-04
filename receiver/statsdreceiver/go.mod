@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.8.0
 	go.opencensus.io v0.23.0
 	go.opentelemetry.io/collector v0.29.1-0.20210628130708-ec64689277a6
 	go.opentelemetry.io/otel v0.20.0
