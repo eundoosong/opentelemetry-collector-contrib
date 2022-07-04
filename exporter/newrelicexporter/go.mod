@@ -7,7 +7,7 @@ require (
 	github.com/golang/protobuf v1.5.2
 	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/newrelic/newrelic-telemetry-sdk-go v0.7.1
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.8.0
 	go.opencensus.io v0.23.0
 	go.opentelemetry.io/collector v0.29.1-0.20210628130708-ec64689277a6
 	go.uber.org/zap v1.17.0
